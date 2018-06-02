@@ -1,5 +1,4 @@
 bs4
 html2text
-lxml
+html5lib
 requests
-tomd
