@@ -46,7 +46,7 @@ def lint_table(text: str) -> str:
     t = re.sub(r' \n\n\|',                    '|',        t)
     t = re.sub(r'(.*?(?:\|.*?)+\|?)   ?\n  ', '|\\g<1>|', t)
     t = re.sub(r'(\|(?:.*?\|)+\n)+',          '\\g<0>\n', t)
-    return text
+    return t
 
 
 def decompose_not_content(article: BeautifulSoup):
